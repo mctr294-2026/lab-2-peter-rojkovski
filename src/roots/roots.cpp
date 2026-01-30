@@ -1,4 +1,3 @@
-#pragma message("PLEASE NO.1")
 #include <iostream>
 #include <cstdlib>
 #include <cmath> // for getting the abs of floating-point numbers
@@ -187,7 +186,7 @@ bool secant(std::function<double(double)> f,
         double fc = f(c);
         double fc1 = f(c1);
 
-        if (std::abs(fc) <= tolerance){
+        if (std::abs(fc1) <= tolerance){
             *root = c1;
             return true;
         }
